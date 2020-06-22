@@ -89,10 +89,12 @@ class ObjectWithStaticField implements Serializable {
 
     public static void serializeStatic(ObjectOutputStream objectOutputStream) throws IOException {
         objectOutputStream.writeInt(count);
+        objectOutputStream.writeUTF(string);
     }
 
     public static void deserializeStatic(ObjectInputStream objectInputStream) throws IOException {
         count = objectInputStream.readInt();
+        string = objectInputStream.readUTF();
     }
 
     @Override
