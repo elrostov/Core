@@ -1,4 +1,4 @@
-package test.app;
+package core.app;
 
 import java.util.Arrays;
 import java.util.Comparator;

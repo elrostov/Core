@@ -1,4 +1,4 @@
-package test.app.collection;
+package core.app.collection;
 
 import java.util.LinkedList;
 

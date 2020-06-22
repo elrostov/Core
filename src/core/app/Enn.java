@@ -1,4 +1,4 @@
-package test.app;
+package core.app;
 
 public enum Enn {
      A {

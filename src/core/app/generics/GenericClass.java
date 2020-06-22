@@ -1,4 +1,4 @@
-package test.app.generics;
+package core.app.generics;
 
 import java.lang.reflect.ParameterizedType;
 
