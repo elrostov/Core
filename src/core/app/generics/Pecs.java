@@ -39,11 +39,11 @@ public class Pecs {
     }
 
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
-//        int rez = nestedFactor(256, 4);
-//        System.out.println(rez);
+/*        int rez = nestedFactor(256, 4);
+        System.out.println(rez);
         long l = 4_294_967_296L;
         int i = 2_147_483_647 + 1;
-        System.out.println(i);
+        System.out.println(i);*/
 
 //        listObject = listNumber; //-
 //        listObject = new ArrayList<Number>(); //-
@@ -87,8 +87,8 @@ public class Pecs {
 //        copyNumber(listInteger1, listObject2); //-
 //        copyNumber(listObject1, listInteger2); //+
 //
-//        listNumber1.add(new Long(6)); //-
-//        listNumber1.add(new Integer(6)); //-+
+//        listNumber1.add(new Long(6)); //- +???
+//        listNumber1.add(new Integer(6)); //-+ ???
 //
 //        listObject1 = listInteger1; //-
 //        listNumber1 = listLong1; //-
@@ -147,34 +147,35 @@ public class Pecs {
     }
 
 
-//    public static void copyNumber(
-//            List<? super Number> dest, // List<Number>, List<Object>
-//            List<? extends Number> src // List<Number>, List<Integer>, List<Long> ...
-//    ) {
-////        Object o1 = src.get(0);
-////        Number n1 = src.get(0);
-////        Integer i1 = src.get(0);
-////        Long l1 = src.get(0);
+    public static void copyNumber2(
+            List<? super Number> consumer, // List<Number>, List<Object>
+            List<? extends Number> producer // List<Number>, List<Integer>, List<Long> ...
+    ) {
+//        Object o1 = producer.get(0);
+//        Number n1 = producer.get(0);
+//        Integer i1 = producer.get(0);
+//        Long l1 = producer.get(0);
 //
-////        src.add(new Object());
-////        src.add(new Integer(5));
-////        src.add(new Long(5));
-////        src.add(null);
+//        producer.add(new Object());
+//        producer.add(new Integer(5));
+//        producer.add(new Long(5));
+//        producer.add(null);
 //
-////        src = listObject1;
-////        src = listNumber1;
-////        src = listInteger1;
-////        src = listLong1;
+//        producer = listObject1;
+//        producer = listNumber1;
+//        producer = listInteger1;
+//        producer = listLong1;
 //
-////        Number n2 = dest.get(0);
-////        Object o2 = dest.get(0);
-////        Integer i2 = dest.get(0);
-////        Long l2 = dest.get(0);
+//        Number n2 = consumer.get(0);
+//        Object o2 = consumer.get(0);
+//        Integer i2 = consumer.get(0);
+//        Long l2 = consumer.get(0);
 //
-////        dest.add(10);
-////        dest.add(20.4);
-////        dest.add(30L);
+//        consumer.add(10);
+//        consumer.add(20.4);
+//        consumer.add(30L);
+//        consumer.add(null);
 //
-////        dest = listObject1;
-//    }
+//        consumer = listObject1;
+    }
 }
