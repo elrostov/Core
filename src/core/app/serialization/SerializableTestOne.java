@@ -1,4 +1,4 @@
-package core.app.serialize;
+package core.app.serialization;
 
 import java.io.*;
 

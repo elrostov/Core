@@ -1,4 +1,4 @@
-package core.app.collection;
+package core.app.collections;
 
 import java.util.*;
 

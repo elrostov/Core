@@ -1,7 +1,7 @@
 package core.app;
 
-import core.app.collection.ArrayListTest;
-import core.app.collection.LinkedListTest;
+import core.app.collections.ArrayListTest;
+import core.app.collections.LinkedListTest;
 
 import java.io.BufferedReader;
 import java.io.IOException;
