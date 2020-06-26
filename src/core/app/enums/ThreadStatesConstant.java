@@ -1,4 +1,4 @@
-package core.app.enums.enumsVersusConstants;
+package core.app.enums;
 
 public class ThreadStatesConstant {
     public static final int START = 1;

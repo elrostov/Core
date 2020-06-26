@@ -1,4 +1,4 @@
-package core.app.enums.enumsVersusConstants;
+package core.app.enums;
 
 import java.io.Closeable;
 import java.io.IOException;

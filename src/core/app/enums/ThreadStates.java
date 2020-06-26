@@ -1,4 +1,4 @@
-package core.app.enums.enumsVersusConstants;
+package core.app.enums;
 
 public enum ThreadStates {
     START,
