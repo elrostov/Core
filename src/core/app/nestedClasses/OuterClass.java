@@ -20,11 +20,4 @@ public class OuterClass {
             return OuterClass.this;
         }
     }
-
-    public static void main(String[] args) {
-        InnerClass innerClass = new OuterClass().new InnerClass();
-        OuterClass outerClass = innerClass.getOuterClass();
-        System.out.println(outerClass);
-        System.out.println(innerClass);
-    }
 }
