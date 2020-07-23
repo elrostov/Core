@@ -41,140 +41,111 @@ public class Pecs {
     public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 //        int rez = nestedFactor(256, 4);
 //        System.out.println(rez);
-        long l = 4_294_967_296L;
-        int i = 2_147_483_647 + 1;
-        System.out.println(i);
-
-//        listObject = listNumber; //-
-//        listObject = new ArrayList<Number>(); //-
-//        listNumber = listInteger; //-
-//        listNumber = new ArrayList<Long>(); //-
+//        long l = 4_294_967_296L;
+//        int i = 2_147_483_647 + 1;
+//        System.out.println(i);
 
         ;
 
-//        listExtendsObject = listInteger; //+
-//        listExtendsObject = listObject; //+
-//        listSuperObject = listObject; //+
-//        listSuperObject = listLong; //-
-//        listExtendsNumber = listObject; //-
-//        listExtendsNumber = listInteger; //+
-//        listSuperNumber = listLong; //-
-//        listSuperNumber = listObject; //+
-//        listExtendsInteger = listObject; //-
-//        listSuperInteger = listNumber; //+
-//        listExtendsLong = listNumber; //-
-//        listSuperLong = listObject; //+
-//        listSuperLong = listNumber; //+
+//        listObject = listNumber; // 1
+//        listObject = new ArrayList<Number>(); // 2
+//        listNumber = listInteger; // 3
+//        listNumber = new ArrayList<Long>(); // 4
 
         ;
 
-//        listExtendsObject = listSuperNumber; //+
-//        listExtendsInteger = listSuperObject; //-
-//        listSuperObject = listSuperLong; //-
-//        listSuperLong = listSuperObject; //+
-//        listSuperLong = listExtendsObject; //+
-//        listSuperInteger = listSuperObject; //+
-//        listSuperInteger = listExtendsNumber; //+-
-//        listSuperInteger = listExtendsInteger; //+-
-//        listExtendsNumber = listSuperNumber; //+-
+//        listExtendsObject = listInteger; // 5
+//        listExtendsObject = listObject; // 6
+//        listSuperObject = listObject; // 7
+//        listSuperObject = listLong; // 8
+//        listExtendsNumber = listObject; // 9
+//        listExtendsNumber = listInteger; // 10
+//        listSuperNumber = listLong; // 11
+//        listSuperNumber = listObject; // 12
+//        listExtendsInteger = listObject; // 13
+//        listSuperInteger = listNumber; // 14
+//        listExtendsLong = listNumber; // 15
+//        listSuperLong = listObject; // 16
+//        listSuperLong = listNumber; // 17
 
         ;
 
-//        copyNumber(listObject1, listObject2); //-
-//        copyNumber(listNumber1, listNumber2); //+
-//        copyNumber(listInteger1, listInteger2); //-
-//        copyNumber(listLong1, listLong2); //-
-//        copyNumber(listInteger1, listObject2); //-
-//        copyNumber(listObject1, listInteger2); //+
+//        listExtendsObject = listSuperNumber; // 18
+//        listExtendsInteger = listSuperObject; // 19
+//        listSuperObject = listSuperLong; // 20
+//        listSuperLong = listSuperObject; // 21
+//        listSuperLong = listExtendsObject; // 22
+//        listSuperInteger = listSuperObject; // 23
+//        listSuperInteger = listExtendsNumber; // 24
+//        listSuperInteger = listExtendsInteger; // 25
+//        listExtendsNumber = listSuperNumber; // 26
+
+        ;
+
+//        copyNumber(listObject1, listObject2); // 27
+//        copyNumber(listNumber1, listNumber2); // 28
+//        copyNumber(listInteger1, listInteger2); // 29
+//        copyNumber(listLong1, listLong2); // 30
+//        copyNumber(listInteger1, listObject2); // 31
+//        copyNumber(listObject1, listInteger2); // 32
 //
-//        listNumber1.add(new Long(6)); //-
-//        listNumber1.add(new Integer(6)); //-+
+//        listNumber1.add(new Long(6)); // 33
+//        listNumber1.add(new Integer(6)); // 34
 //
-//        listObject1 = listInteger1; //-
-//        listNumber1 = listLong1; //-
+//        listObject1 = listInteger1; // 35
+//        listNumber1 = listLong1; // 36
 //
-//        copy(listObject1, listLong2); //+
+//        copy(listObject1, listLong2); // 37
 //        Pecs.copy(listNumber1, listInteger2);
     }
 
-    public static void copyNumber(List<? super Number> dest, List<? extends Number> src) { //List<Long>
-//        Object o1 = src.get(0); //+
-//        Number n1 = src.get(0); //+
-//        Integer i1 = src.get(0); //+-
-//        Long l1 = src.get(0); //-
-//
-//        src.add(new Object()); //-
-//        src.add(new Integer(5)); //-
-//        src.add(new Long(5)); //-
-//        src.add(null); //+
-//
-//        src = listObject1; //-
-//        src = listNumber1; //-
-//        src = listInteger1; //-
-//        src = listLong1; //-
-//
-//        Number n2 = dest.get(0); //-
-//        Object o2 = dest.get(0); //-
-//        Integer i2 = dest.get(0); //-
-//        Long l2 = dest.get(0); //-
-//
-//        dest.add(10); //+
-//        dest.add(20.4); //+
-//        dest.add(30L); //+
-//
-//        dest = listObject1; //+
-    }
-
-
-
-
-
-
-
-
-
-
-
-    public static <T> void copy(List<? super T> dest, List<? extends T> src) {
-//        src.get(0); //+
-//        Number n = (Integer) src.get(0); //+
-//        src.add(new Object()); //-
-//        src.add(null); //+
-//
-//        dest.add(src.get(0)); //+
-//        dest.add(null); //-
-//        Object o = dest.get(0); //-
-    }
-
-
-//    public static void copyNumber(
-//            List<? super Number> dest, // List<Number>, List<Object>
-//            List<? extends Number> src // List<Number>, List<Integer>, List<Long> ...
-//    ) {
-////        Object o1 = src.get(0);
-////        Number n1 = src.get(0);
-////        Integer i1 = src.get(0);
-////        Long l1 = src.get(0);
-//
-////        src.add(new Object());
-////        src.add(new Integer(5));
-////        src.add(new Long(5));
-////        src.add(null);
-//
-////        src = listObject1;
-////        src = listNumber1;
-////        src = listInteger1;
-////        src = listLong1;
-//
-////        Number n2 = dest.get(0);
-////        Object o2 = dest.get(0);
-////        Integer i2 = dest.get(0);
-////        Long l2 = dest.get(0);
-//
-////        dest.add(10);
-////        dest.add(20.4);
-////        dest.add(30L);
-//
-////        dest = listObject1;
+//    public static void copyNumber(List<? super Number> dest, List<? extends Number> src) { // 38
+////        Object o1 = src.get(0); // 39
+////        Number n1 = src.get(0); // 40
+////        Integer i1 = src.get(0); // 41
+////        Long l1 = src.get(0); // 42
+////
+////        src.add(new Object()); // 43
+////        src.add(new Integer(5)); // 44
+////        src.add(new Long(5)); // 45
+////        src.add(null); // 46
+////
+////        src = listObject1; // 47
+////        src = listNumber1; // 48
+////        src = listInteger1; // 49
+////        src = listLong1; // 50
+////
+////        Number n2 = dest.get(0); // 51
+////        Object o2 = dest.get(0); // 52
+////        Integer i2 = dest.get(0); // 53
+////        Long l2 = dest.get(0); // 54
+////
+////        dest.add(10); // 55
+////        dest.add(20.4); // 56
+////        dest.add(30L); // 57
+////
+////        dest = listObject1; // 58
 //    }
+
+
+
+
+
+
+
+
+
+
+
+//    public static <T> void copy(List<? super T> dest, List<? extends T> src) {
+////        src.get(0); // 59
+////        Number n = (Integer) src.get(0); // 60
+////        src.add(new Object()); // 61
+////        src.add(null); // 62
+////
+////        dest.add(src.get(0)); // 63
+////        dest.add(null); // 64
+////        Object o = dest.get(0); // 65
+//    }
+
 }

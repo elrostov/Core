@@ -1,4 +1,4 @@
-package core.app.initializationBlocks;
+package core.app.initialization;
 
 public class GFG {
 
@@ -28,8 +28,10 @@ public class GFG {
 
     public static void main(String[] args) {
         new GFG();
+        System.out.println("-------------------");
         new GFG(8);
 
         System.out.println(MyTest.getSum());
+        System.out.println(MyTest.getInitialized());
     }
 }

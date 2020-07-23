@@ -17,6 +17,13 @@ public class OuterClass {
 //        private static int jjj = 222;
 
         public OuterClass getOuterClass() {
+
+            class LocalClass{
+
+            }
+
+            LocalClass localClass = new LocalClass();
+
             return OuterClass.this;
         }
     }
